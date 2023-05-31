@@ -1,0 +1,202 @@
+.home {
+  margin: 0%;
+  padding: 0%;
+  position: relative;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.prev-button {
+  background-color: red;
+  position: absolute;
+  top: 20%;
+  left: 10px;
+  transform: translateY(-50%);
+  z-index: 9;
+}
+
+.next-button {
+  background-color: red;
+  position: absolute;
+  top: 20%;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 9;
+}
+
+.Container {
+  margin: 0%;
+  text-align: center;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.Container h1{
+  font-size: 100px;
+  padding-top: 250px;
+}
+
+.Container p{
+  padding-top: 50px;
+  padding-bottom: 100px;
+  font-size: 30px;
+}
+
+.home{
+  padding-top: -100px;
+}
+
+.form{
+  background-color: white;
+  position: relative;
+  left: 500px;
+  border: 1px solid black;
+  padding:10px;
+  margin: 10px;
+  width: 500px;
+  height: 500px;
+}
+
+.form input{
+  justify-content: space-between;
+  padding: 10px;
+  height: 10px;
+  width: 300px;
+}
+
+.form .sumbit{
+  position: relative;
+  left: 200px;
+  padding: 10px;
+}
+
+
+.teacher{
+  position: absolute;
+  top:690px;
+  left:-50px;
+  z-index: 100;
+}
+
+#teach{
+  background-color: lightblue;
+  width: 600px;
+  height: 1115px;
+}
+
+.form .sumbit2{
+  position: relative;
+  left: 250px;
+  padding: 10px;
+  width: 100px;
+}
+
+h1{
+  text-align: center;
+}
+
+.main{
+  background: linear-gradient(135deg , #71b7e6 , #9b59b6);
+  margin: 0;
+  padding-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main input{
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.main2{
+  position: relative;
+  left:250px;
+  background: white;
+  width: 1000px;
+  height: 600px;
+}
+
+.main label{
+  padding-bottom: 10px;
+}
+
+
+.first{
+  border-right: 1px solid black;
+}
+
+.head{
+  content: '';
+  position: relative;
+  left:100px;
+  height: 3px;
+  width: 30px;
+  background: #9b59b6;
+
+}
+
+.subject-checkbox {
+  display: flex;
+  align-items: center;
+  
+}
+
+.subject-checkbox input[type="checkbox"] {
+  margin-right: 10px; 
+
+}
+
+.subject-label {
+  display: flex;
+  align-items: center;
+}
+
+.subject-checkbox label {
+ 
+  font-weight: bold;
+
+}
+
+.main .label{
+ padding-bottom: 522px;
+}
+
+.sumbit{
+  margin: 10px;
+  width: 450px;
+  height: 50px;
+  color: #fff;
+  background: linear-gradient(135deg , #71b7e6 , #9b59b6);
+}
+
+.sbt{
+   position: absolute;
+   bottom: 50px;
+   left: 530px;
+   width: 450px;
+   height: 50px;
+   color: #fff;
+   background: linear-gradient(135deg , #71b7e6 , #9b59b6);
+}
+
+.btns{
+  padding-bottom: 10px;
+  position: relative;
+  left:250px;
+  background: white;
+  width: 1000px;
+  height: 100px;
+}
+
+.main select{
+  padding-bottom: 10px;
+  padding: 5px;
+  width: 100px;
+  height: 30px;
+}

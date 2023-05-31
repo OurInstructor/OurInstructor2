@@ -1,0 +1,25 @@
+.footer{
+    background-color: black;   
+    padding: 10px;
+    color: white;
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fot-item{
+    padding: 10px;
+}
+
+.fot-btn{
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.fot-btn:hover{
+    background-color: rgb(226, 226, 226);
+    color: black;
+}
