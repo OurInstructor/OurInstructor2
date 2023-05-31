@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Login.css';
 import { useNavigate } from 'react-router-dom';
+import bi from '../../Assets/S4.jpg'
 
 
 const Login = () => {
@@ -112,7 +113,7 @@ const Login = () => {
 });}
 
   return (
-    <div className="auth">
+    <div className="auth" style={{backgroundImage: `url(${bi})`}}>
       {isSignup ? (
         <section>
           <div className='form-box'>
