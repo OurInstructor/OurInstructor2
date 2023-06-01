@@ -129,9 +129,9 @@ const MyComponent = () => {
        <label htmlFor="fname">First Name</label><br/>
        <input className='inp' type="text" name="fname" placeholder="First Name" onChange={(e) => setFirst_name(e.target.value)} /><br/><br/>
        <label htmlFor="lname">Last Name</label><br/>
-       <input className='inp' type="text" name="lname" placeholder="Last Name" onChange={(e) => setLast_name(e.target.value)} /><br/><br/>
-       <label for="school">University</label><br/>
-       <input className='inp' type="text" name="school" placeholder='School' onChange={(e) => setSchool(e.target.value)}></input><br/><br/>
+       <input type="text" name="lname" placeholder="Last Name" onChange={(e) => setLast_name(e.target.value)} /><br/><br/>
+       <label htmlFor="parent">Parent</label><br/>
+       <input type="text" name="parent" placeholder="Parent" onChange={(e) => setParent(e.target.value)} /><br/><br/>
      </form>
    </div>
    <div style={{ flex: 1, padding: '20px' }}>
@@ -163,6 +163,8 @@ const MyComponent = () => {
                  <option>8-10</option>
                  <option>11-12</option>
                </select><br/><br/>
+               <label for="school">School</label><br/>
+               <input type="text" name="school" placeholder='School' onChange={(e) => setSchool(e.target.value)}></input><br/><br/>
              </form>
            </div>
          </div>
