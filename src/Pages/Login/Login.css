@@ -14,7 +14,6 @@
     margin: 0;
     padding: 190px;
     background-color: blue;
-    background-image: url("E:\Ourinstructor\ourinstructor\src\Assets\S4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -109,30 +108,23 @@
     height: 40px;
     background: black;
     border: none;
-    outline: none;
     cursor: pointer;
     font-size: 1em;
     font-weight: 600;
     border-radius: 10px;
+    
 }
 
-
-.SIGNUP{
-  position: relative;
-  right:130px;
+.btn2{
+  color: red;
+  text-decoration: none;
 }
 
-.SIGNUP input{
-  padding: 5px;
-  height: 20px;
-  border-radius: 5px;
+.btn2:hover{
+  color: black;
 }
 
-
- 
- .SIGNUP select{
-  padding-bottom: 10px;
-  padding: 5px;
-  width: 100px;
-  height: 30px;
+.btn:hover{
+  background-color: lightgray;
+  color: black;
 }

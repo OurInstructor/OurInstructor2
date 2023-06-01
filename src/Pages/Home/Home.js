@@ -100,14 +100,14 @@ const MyComponent = () => {
 
   return (
     <div className="home">
-      <button className="prev-button" onClick={handlePrevSlide}>&#10094;</button>
+      <button className="prev-button design" onClick={handlePrevSlide}>&#10094;</button>
       <div className="Container" style={{ backgroundImage: `url(${currentSlide})`,opacity:'0.8'}}>
       <h1>Ourinstructor</h1>
          <p>We at OurInstructor are here for  Penetrating work culture in College Students. <br/>
          Bringing western students to work energy in our home country.</p> 
          
       </div>
-      <button className="next-button" onClick={handleNextSlide}>&#10095;</button>
+      <button className="next-button design" onClick={handleNextSlide}>&#10095;</button>
       
       {!showForm ? (
          <div className='main'>
@@ -117,21 +117,21 @@ const MyComponent = () => {
    <div style={{ flex: 1, padding: '20px' , margin:'10px'}} className='first'>
      <form >
        <label htmlFor="username">Username</label><br/>
-       <input type="text" name="username" placeholder="Username" onChange={(e) => setUsername(e.target.value)} /><br/><br/>
+       <input className='inp' type="text" name="username" placeholder="Username" onChange={(e) => setUsername(e.target.value)} /><br/><br/>
        <label htmlFor="password">Password</label><br/>
-       <input type="password" name="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} /><br/><br/>
+       <input className='inp' type="password" name="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} /><br/><br/>
        <label htmlFor="password2">Confirm Password</label><br/>
-       <input type="password" name="password2" placeholder="Confirm Password" onChange={(e) => setPassword2(e.target.value)} /><br/><br/>
+       <input className='inp' type="password" name="password2" placeholder="Confirm Password" onChange={(e) => setPassword2(e.target.value)} /><br/><br/>
        <label htmlFor="email">Email</label><br/>
-       <input type="email" name="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} /><br/><br/>
+       <input className='inp' type="email" name="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} /><br/><br/>
        <label htmlFor="phone">Phone Number</label><br/>
-       <input type="number" name="phone" placeholder="Phone Number" onChange={(e) => setPhone(e.target.value)} /><br/><br/>
+       <input className='inp' type="number" name="phone" placeholder="Phone Number" onChange={(e) => setPhone(e.target.value)} /><br/><br/>
        <label htmlFor="fname">First Name</label><br/>
-       <input type="text" name="fname" placeholder="First Name" onChange={(e) => setFirst_name(e.target.value)} /><br/><br/>
+       <input className='inp' type="text" name="fname" placeholder="First Name" onChange={(e) => setFirst_name(e.target.value)} /><br/><br/>
        <label htmlFor="lname">Last Name</label><br/>
-       <input type="text" name="lname" placeholder="Last Name" onChange={(e) => setLast_name(e.target.value)} /><br/><br/>
-       <label htmlFor="parent">Parent</label><br/>
-       <input type="text" name="parent" placeholder="Parent" onChange={(e) => setParent(e.target.value)} /><br/><br/>
+       <input className='inp' type="text" name="lname" placeholder="Last Name" onChange={(e) => setLast_name(e.target.value)} /><br/><br/>
+       <label for="school">University</label><br/>
+       <input className='inp' type="text" name="school" placeholder='School' onChange={(e) => setSchool(e.target.value)}></input><br/><br/>
      </form>
    </div>
    <div style={{ flex: 1, padding: '20px' }}>
@@ -154,18 +154,15 @@ const MyComponent = () => {
 ))}
         <br/><br/>
        <label htmlFor="address">Address</label><br/>
-       <input type="text" name="address" placeholder="Address" onChange={(e) => setAddress(e.target.value)} /><br/><br/>
+       <input className='inp add' type="text" name="address" placeholder="Address" onChange={(e) => setAddress(e.target.value)} /><br/><br/>
        <label htmlFor="pincode">Pincode</label><br/>
-       <input type="number" name="pincode" placeholder="Pincode" onChange={(e) => setPincode(e.target.value)} /><br/><br/>
+       <input className='inp' type="number" name="pincode" placeholder="Pincode" onChange={(e) => setPincode(e.target.value)} /><br/><br/>
                <label for="classes">Classes</label><br/>
                <select name="classes" onChange={(e) => setClasses(e.target.value)} >
                  <option>1-7</option>
                  <option>8-10</option>
                  <option>11-12</option>
-                 <option>university</option>
                </select><br/><br/>
-               <label for="school">School</label><br/>
-               <input type="text" name="school" placeholder='School' onChange={(e) => setSchool(e.target.value)}></input><br/><br/>
              </form>
            </div>
          </div>
@@ -182,21 +179,23 @@ const MyComponent = () => {
    <div  style={{ flex: 1, padding: '20px'}}>
      <form className='first' >
        <label htmlFor="username">Username</label><br/>
-       <input type="text" name="username" placeholder="Username" onChange={(e) => setUsername(e.target.value)} /><br/><br/>
+       <input className='inp' type="text" name="username" placeholder="Username" onChange={(e) => setUsername(e.target.value)} /><br/><br/>
        <label htmlFor="password">Password</label><br/>
-       <input type="password" name="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} /><br/><br/>
+       <input className='inp' type="password" name="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} /><br/><br/>
        <label htmlFor="password2">Confirm Password</label><br/>
-       <input type="password" name="password2" placeholder="Confirm Password" onChange={(e) => setPassword2(e.target.value)} /><br/><br/>
+       <input className='inp' type="password" name="password2" placeholder="Confirm Password" onChange={(e) => setPassword2(e.target.value)} /><br/><br/>
        <label htmlFor="email">Email</label><br/>
-       <input type="email" name="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} /><br/><br/>
+       <input className='inp'type="email" name="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} /><br/><br/>
        <label htmlFor="phone">Phone Number</label><br/>
-       <input type="number" name="phone" placeholder="Phone Number" onChange={(e) => setPhone(e.target.value)} /><br/><br/>
+       <input className='inp' type="number" name="phone" placeholder="Phone Number" onChange={(e) => setPhone(e.target.value)} /><br/><br/>
        <label htmlFor="fname">First Name</label><br/>
-       <input type="text" name="fname" placeholder="First Name" onChange={(e) => setFirst_name(e.target.value)} /><br/><br/>
+       <input className='inp' type="text" name="fname" placeholder="First Name" onChange={(e) => setFirst_name(e.target.value)} /><br/><br/>
        <label htmlFor="lname">Last Name</label><br/>
-       <input type="text" name="lname" placeholder="Last Name" onChange={(e) => setLast_name(e.target.value)} /><br/><br/>
+       <input className='inp' type="text" name="lname" placeholder="Last Name" onChange={(e) => setLast_name(e.target.value)} /><br/><br/>
        <label htmlFor="parent">Parent</label><br/>
-       <input type="text" name="parent" placeholder="Parent" onChange={(e) => setParent(e.target.value)} /><br/><br/>
+       <input className='inp' type="text" name="parent" placeholder="Parent" onChange={(e) => setParent(e.target.value)} /><br/><br/>
+       <label for="school">School</label><br/>
+       <input className='inp' type="text" name="school" placeholder='School' onChange={(e) => setSchool(e.target.value)}></input><br/><br/>
      </form>
    </div>
    <div style={{ flex: 1, padding: '20px' }}>
@@ -220,9 +219,9 @@ const MyComponent = () => {
 
         <br/><br/>
        <label htmlFor="address">Address</label><br/>
-       <input type="text" name="address" placeholder="Address" onChange={(e) => setAddress(e.target.value)} /><br/><br/>
+       <input className='inp add' type="text" name="address" placeholder="Address" onChange={(e) => setAddress(e.target.value)} /><br/><br/>
        <label htmlFor="pincode">Pincode</label><br/>
-       <input type="number" name="pincode" placeholder="Pincode" onChange={(e) => setPincode(e.target.value)} /><br/><br/>
+       <input className='inp' type="number" name="pincode" placeholder="Pincode" onChange={(e) => setPincode(e.target.value)} /><br/><br/>
                <label for="classes">Classes</label><br/>
                <select name="classes" onChange={(e) => setClasses(e.target.value)} >
                  <option>1</option>
@@ -237,10 +236,8 @@ const MyComponent = () => {
                  <option>10</option>
                  <option>11</option>
                  <option>12</option>
-                 <option>university</option>
                </select><br/><br/>
-               <label for="school">School</label><br/>
-               <input type="text" name="school" placeholder='School' onChange={(e) => setSchool(e.target.value)}></input><br/><br/>
+               
              </form>
            </div>
          </div>

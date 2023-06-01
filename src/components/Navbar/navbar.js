@@ -27,13 +27,12 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navbar-right">
-          {role === 'student' ? (
+          {role === 'student' && 
              <Link to="/student" className="nav-item nav-btn">Student</Link>
-           ) : role === 'teacher' ? (
+          }           
+          { role === 'teacher' && 
              <Link to="/teacher" className="nav-item nav-btn">Teacher</Link>
-           ) : (
-             <Link to="/" className="nav-item nav-btn">Home</Link>
-           )}
+           }
           {user === null ? (
             <Link to="/login" className="nav-item nav-btn">
               Login
