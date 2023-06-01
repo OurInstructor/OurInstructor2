@@ -1,68 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Login.css';
 import { useNavigate } from 'react-router-dom';
 import bi from '../../Assets/S4.jpg'
 import { Link } from 'react-router-dom';
 
 
-
 const Login = () => {
   const navigate = useNavigate();
-  const [isSignup, setSignup] = useState(true);
 
-  const [showForm, setShowForm] = useState(false);
-  const [role, setRole] = useState('teacher');
 
-  const handleteacher = () => {
-    setShowForm(!showForm);
 
-    if (role === 'student') {
-      setRole('teacher');
-    } else if (role === 'teacher') {
-      setRole('student');
-    }
-  };
-
-  const subjects = [
-    { id: 1, name: "Maths" },
-    { id: 2, name: "EVS" },
-    { id: 3, name: "English" },
-    { id: 4, name: "Social Science" },
-    { id: 5, name: "Physics" },
-    { id: 6, name: "Chemistry" },
-    { id: 7, name: "Biology" },
-    { id: 8, name: "Computer Science" }
-  ];
-  
-  const [selectedSubjects, setSelectedSubjects] = useState([]);
-  
-  const handleSubjectChange = (event) => {
-    const selectedSubject = event.target.value;
-    if (selectedSubjects.includes(selectedSubject)) {
-      setSelectedSubjects(selectedSubjects.filter(subject => subject !== selectedSubject));
-    } else {
-      setSelectedSubjects([...selectedSubjects, selectedSubject]);
-    }
-  };
-
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [password2, setPassword2] = useState('');
-  const [email, setEmail] = useState('');
-  const [number, setPhone] = useState('');
-  const [first_name, setFirst_name] = useState('');
-  const [last_name, setLast_name] = useState('');
-  const [Address, setAddress] = useState('');
-  const [pincode, setPincode] = useState('');
-  const [classes, setClasses] = useState('');
-  const [school_university, setSchool] = useState('');
-  const [parent, setParent] = useState('');
-  
-  
-
-  const handleClick = () => {
-    setSignup(!isSignup);
-  };
+ 
 
   
 
@@ -96,23 +44,7 @@ const Login = () => {
       });
   };
 
-  const handlestudent = (event) =>{
-    event.preventDefault();
-    const subject = selectedSubjects.join();
-    fetch('https://ourinstructor.pythonanywhere.com/register', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({ username, password, password2, email, first_name, last_name, number, parent , subject, Address, pincode, role, classes, school_university })
-})
-.then((response) => response.json())
-.then((data) => {
-  console.log(data);
-})
-.catch((error) => {
-  console.error(error);
-});}
+  
 
   return (
     <div className="auth" style={{backgroundImage: `url(${bi})`}}>
