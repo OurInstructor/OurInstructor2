@@ -11,6 +11,10 @@
     padding: 10px;
 }
 
+.fot-content{
+    padding-left: 10px;
+}
+
 .fot-btn{
     background-color: black;
     border: none;
@@ -22,4 +26,10 @@
 .fot-btn:hover{
     background-color: rgb(226, 226, 226);
     color: black;
+}
+
+@media (max-width: 768px) {
+    .footer{
+        width: 380px;
+    }
 }

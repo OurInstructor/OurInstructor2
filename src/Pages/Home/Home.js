@@ -129,9 +129,9 @@ const MyComponent = () => {
        <label htmlFor="fname">First Name</label><br/>
        <input className='inp' type="text" name="fname" placeholder="First Name" onChange={(e) => setFirst_name(e.target.value)} /><br/><br/>
        <label htmlFor="lname">Last Name</label><br/>
-       <input type="text" name="lname" placeholder="Last Name" onChange={(e) => setLast_name(e.target.value)} /><br/><br/>
+       <input className='inp' type="text" name="lname" placeholder="Last Name" onChange={(e) => setLast_name(e.target.value)} /><br/><br/>
        <label htmlFor="parent">Parent</label><br/>
-       <input type="text" name="parent" placeholder="Parent" onChange={(e) => setParent(e.target.value)} /><br/><br/>
+       <input className='inp' type="text" name="parent" placeholder="Parent" onChange={(e) => setParent(e.target.value)} /><br/><br/>
      </form>
    </div>
    <div style={{ flex: 1, padding: '20px' }}>
@@ -158,13 +158,13 @@ const MyComponent = () => {
        <label htmlFor="pincode">Pincode</label><br/>
        <input className='inp' type="number" name="pincode" placeholder="Pincode" onChange={(e) => setPincode(e.target.value)} /><br/><br/>
                <label for="classes">Classes</label><br/>
-               <select name="classes" onChange={(e) => setClasses(e.target.value)} >
+               <select name="classes" className='slt' onChange={(e) => setClasses(e.target.value)} >
                  <option>1-7</option>
                  <option>8-10</option>
                  <option>11-12</option>
                </select><br/><br/>
                <label for="school">School</label><br/>
-               <input type="text" name="school" placeholder='School' onChange={(e) => setSchool(e.target.value)}></input><br/><br/>
+               <input className='inp' type="text" name="school" placeholder='School' onChange={(e) => setSchool(e.target.value)}></input><br/><br/>
              </form>
            </div>
          </div>
@@ -225,7 +225,7 @@ const MyComponent = () => {
        <label htmlFor="pincode">Pincode</label><br/>
        <input className='inp' type="number" name="pincode" placeholder="Pincode" onChange={(e) => setPincode(e.target.value)} /><br/><br/>
                <label for="classes">Classes</label><br/>
-               <select name="classes" onChange={(e) => setClasses(e.target.value)} >
+               <select className='slt' name="classes" onChange={(e) => setClasses(e.target.value)} >
                  <option>1</option>
                  <option>2</option>
                  <option>3</option>
@@ -250,8 +250,33 @@ const MyComponent = () => {
        </div>
       )}
 
+       <div className='main3'>
+           <h1>Our Services</h1>
+         <div className='service'>
+           <img src={slide1} alt='Attention on each Student'></img>
+           <img src={slide2} alt='Qualified Tutors'></img>
+           <img src={slide3} alt='Quality Content'></img>
+         </div>
+         <div className='ServiceTittle'>
+           <h3 className='tittle1'>Attention on each Student</h3>
+           <h3 className='tittle2'>Qualified Tutors</h3>
+           <h3 className='tittle3'>Quality Content</h3>
+         </div>
+         <div className='service'>
+           <img src={slide4} alt='Weekly/Monthly Test'></img>
+           <img src={slide5} alt='Daily Practice'></img>
+           <img src={slide6} alt='Homework Help'></img>
+         </div>
+         <div className='ServiceTittle'>
+           <h3 className='tittle4'>Weekly/Monthly Test</h3>
+           <h3 className='tittle5'>Daily Practice</h3>
+           <h3 className='tittle6'>Homework Help</h3>
+         </div>
+       </div>
      
     </div>
+
+    
     
   );
 };

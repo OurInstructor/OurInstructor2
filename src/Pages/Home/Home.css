@@ -191,6 +191,7 @@ h1{
   height: 50px;
   color: #fff;
   background: linear-gradient(135deg , #71b7e6 , #9b59b6);
+  cursor: pointer;
 }
 
 .sbt{
@@ -201,6 +202,7 @@ h1{
    height: 50px;
    color: #fff;
    background: linear-gradient(135deg , #71b7e6 , #9b59b6);
+   cursor: pointer;
 }
 
 .btns{
@@ -212,9 +214,54 @@ h1{
   height: 100px;
 }
 
-.main select{
-  padding-bottom: 10px;
-  padding: 5px;
-  width: 100px;
-  height: 30px;
+
+.service{
+  display: flex;
+}
+
+.service img{
+  flex:1;
+  width: 30%;
+  padding: 20px;
+}
+
+.main3{
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 20px;
+}
+
+.ServiceTittle{
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.tittle1{
+  position: relative;
+  left:100px;
+}
+
+.tittle2{
+  position: relative;
+  left:400px;
+}
+
+.tittle3{
+    position: relative;
+    left:750px
+}
+
+.tittle4{
+  position: relative;
+  left:130px;
+}
+
+.tittle5{
+  position: relative;
+  left:450px;
+}
+
+.tittle6{
+  position: relative;
+  left:840px;
 }

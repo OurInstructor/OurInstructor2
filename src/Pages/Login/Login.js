@@ -65,7 +65,7 @@ const Login = () => {
               </div>
               <button className='btn'>Log in</button>
               <div className='register' style={{paddingTop:"10px" }}>
-                 <p>Don't have an account ? <button className='btn'><Link to="/" className='btn2'>Sign-up</Link></button></p>
+                 <p>Don't have an account ? <button className='btn reg'><Link to="/" className='btn2'>Sign-up</Link></button></p>
               </div>
             </form>
             </div>

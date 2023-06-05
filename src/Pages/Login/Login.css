@@ -128,3 +128,66 @@
   background-color: lightgray;
   color: black;
 }
+
+@media (max-width: 768px) {
+  
+  .auth {
+    background-size: cover;
+    background-position: center;
+    height: 420px;
+  }
+
+  
+  .form-box {
+    margin: 0;
+    padding: 0;
+  }
+
+  .form-value{
+    position: relative;
+    top:-100px;
+    left: -170px;
+    width: 280px;
+    height: 550px;
+  }
+
+  .form-value h2{
+    font-size:30px;
+    position: relative;
+    top:-100px;
+    left: -40px;
+  }
+
+  .inputbox{
+    font-size:20px;
+    position: relative;
+    top:-100px;
+    left: -120px;
+    width: 280px;
+  }
+
+  .btn{
+    position: relative;
+    left: -120px;
+    width: 280px;
+  }
+
+  .reg{
+    position: relative;
+    left: -95px;
+  }
+
+  
+
+
+  .register {
+    position: relative;
+    left: -25px;
+    text-align: center; 
+    font-size: 15px;
+  }
+}
+
+
+
+
