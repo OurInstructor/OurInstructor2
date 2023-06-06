@@ -102,7 +102,7 @@ const MyComponent = () => {
     <div className="home">
       <button className="prev-button design" onClick={handlePrevSlide}>&#10094;</button>
       <div className="Container" style={{ backgroundImage: `url(${currentSlide})`,opacity:'0.8'}}>
-      <h1>Ourinstructor</h1>
+      <h1 className='data'>Ourinstructor</h1>
          <p>We at OurInstructor are here for  Penetrating work culture in College Students. <br/>
          Bringing western students to work energy in our home country.</p> 
          
@@ -134,7 +134,7 @@ const MyComponent = () => {
        <input className='inp' type="text" name="parent" placeholder="Parent" onChange={(e) => setParent(e.target.value)} /><br/><br/>
      </form>
    </div>
-   <div style={{ flex: 1, padding: '20px' }}>
+   <div className='LeftForm' style={{ flex: 1, padding: '20px' }}>
      <form>
        <label htmlFor="subject">Subject</label><br/>
        {subjects.map(subject => (

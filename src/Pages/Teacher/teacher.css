@@ -1,0 +1,20 @@
+.sidebar{
+    position: absolute;
+    top:58px;
+    width: 50px;
+    height: 50px;
+}
+
+ion-icon{
+    font-size: 1.5em;
+}
+
+.Sidebuttons{
+    position: absolute;
+    top:108px;
+    background-color: aqua;
+}
+
+.TeacherBody{
+    text-align: center;
+}

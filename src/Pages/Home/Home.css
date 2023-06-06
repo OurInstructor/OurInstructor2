@@ -265,3 +265,109 @@ h1{
   position: relative;
   left:840px;
 }
+
+@media (max-width: 768px) {
+  .Container h1{
+    font-size: 50px;
+    padding-top: 150px;
+  }
+
+  .Container p{
+    font-size: 20px;
+    padding-top: 150px;
+  }
+
+  .service{
+    display: flex;
+    flex-direction: column;
+  }
+  .ServiceTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+ 
+  .service img{
+    width: 100%;
+    padding: 0;
+    padding-bottom: 50px;
+  }
+
+  .tittle1{
+    position: absolute;
+    top:52%;
+    left: 50px;
+  }
+
+  .tittle2{
+    position: absolute;
+    top:61.2%;
+    left: 120px;
+  }
+
+  .tittle3{
+    position: absolute;
+    top:70.5%;
+    left: 120px;
+  }
+
+  .tittle4{
+    position: absolute;
+    top:79.5%;
+    left: 110px;
+  }
+
+  .tittle5{
+    position: absolute;
+    top:88.7%;
+    left: 120px;
+  }
+
+  .tittle6{
+    position: absolute;
+    top:98%;
+    left: 120px;
+  }
+
+  .head{
+    position: relative;
+    left:160px;
+  }
+
+  .main2{
+    position: relative;
+    top:100px;
+    left:0px;
+    width: 100%;
+
+  }
+
+  .inp{
+    width: 100px;
+    height: 20px;
+    border-radius: 5px;
+  }
+
+  .btns{
+    position: relative;
+    left:0px;
+    top:100px;
+    width: 100%;
+    height: 100px;
+  }
+
+  .sumbit{
+    position: relative;
+    left: -5px;
+    width: 170px;
+  }
+
+  .sbt{
+    width: 170px;
+    position: relative;
+    left:200px;
+    top:-60px;
+  }
+
+}
