@@ -48,7 +48,7 @@
 }
 
 @media (max-width: 768px) {
-  .navbarh{
-    max-width: 100%
+  .navbar{
+    width: 100%
   }
 }

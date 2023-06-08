@@ -267,7 +267,7 @@ h1{
 
   .head{
     position: relative;
-    left:160px;
+    left: 40%;
   }
 
   .main2{
@@ -294,35 +294,66 @@ h1{
 
   .sumbit{
     position: relative;
-    left: -5px;
-    width: 170px;
+    left: 5%;
+    width: 40%;
   }
 
   .sbt{
-    width: 170px;
+    width: 30%;
     position: relative;
-    left:200px;
+    left:60%;
     top:-60px;
   }
 
   .service{
     display:unset ;
+    height: 100%;
   }
 
   .service-item {
     display: unset;
+    padding-bottom: 10px;
     padding: 0;
     margin: 0;
     
   }
 
   .tittle{
+    padding-left: 40%;
+    padding-bottom: 10px;
+  }
+
+  .tittle1{
     padding-left: 30%;
   }
 
   .main3 {
-    display:unset;
-    
+    position: relative;
+    top:50px;
+    height: 120%;
+    padding: 0;
+    margin: 0;
   }
+
+  .main3 h2{
+    font-size: 20px;
+  }
+
+  .prev-button {
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 9;
+  }
+
+  .next-button {
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 9;
+  }
+  
 
 }

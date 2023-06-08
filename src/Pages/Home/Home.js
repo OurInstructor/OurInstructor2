@@ -251,11 +251,11 @@ const MyComponent = () => {
       )}
 
 <div className='main3'>
-  <h1>Our Services</h1>
+  <h2>Our Services</h2>
   <div className='service'>
     <div className='service-item'>
       <img src={slide1} alt='Attention on each Student' />
-      <h3 className='tittle'>Attention on each Student</h3>
+      <h3 className='tittle1'>Attention on each Student</h3>
     </div>
     <div className='service-item'>
       <img src={slide2} alt='Qualified Tutors' />
@@ -265,8 +265,6 @@ const MyComponent = () => {
       <img src={slide3} alt='Quality Content' />
       <h3 className='tittle'>Quality Content</h3>
     </div>
-  </div>
-  <div className='service'>
     <div className='service-item'>
       <img src={slide4} alt='Weekly/Monthly Test' />
       <h3 className='tittle'>Weekly/Monthly Test</h3>
