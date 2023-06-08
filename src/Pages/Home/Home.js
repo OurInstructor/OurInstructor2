@@ -250,29 +250,37 @@ const MyComponent = () => {
        </div>
       )}
 
-       <div className='main3'>
-           <h1>Our Services</h1>
-         <div className='service'>
-           <img src={slide1} alt='Attention on each Student'></img>
-           <img src={slide2} alt='Qualified Tutors'></img>
-           <img src={slide3} alt='Quality Content'></img>
-         </div>
-         <div className='ServiceTittle'>
-           <h3 className='tittle1'>Attention on each Student</h3>
-           <h3 className='tittle2'>Qualified Tutors</h3>
-           <h3 className='tittle3'>Quality Content</h3>
-         </div>
-         <div className='service'>
-           <img src={slide4} alt='Weekly/Monthly Test'></img>
-           <img src={slide5} alt='Daily Practice'></img>
-           <img src={slide6} alt='Homework Help'></img>
-         </div>
-         <div className='ServiceTittle'>
-           <h3 className='tittle4'>Weekly/Monthly Test</h3>
-           <h3 className='tittle5'>Daily Practice</h3>
-           <h3 className='tittle6'>Homework Help</h3>
-         </div>
-       </div>
+<div className='main3'>
+  <h1>Our Services</h1>
+  <div className='service'>
+    <div className='service-item'>
+      <img src={slide1} alt='Attention on each Student' />
+      <h3 className='tittle'>Attention on each Student</h3>
+    </div>
+    <div className='service-item'>
+      <img src={slide2} alt='Qualified Tutors' />
+      <h3 className='tittle'>Qualified Tutors</h3>
+    </div>
+    <div className='service-item'>
+      <img src={slide3} alt='Quality Content' />
+      <h3 className='tittle'>Quality Content</h3>
+    </div>
+  </div>
+  <div className='service'>
+    <div className='service-item'>
+      <img src={slide4} alt='Weekly/Monthly Test' />
+      <h3 className='tittle'>Weekly/Monthly Test</h3>
+    </div>
+    <div className='service-item'>
+      <img src={slide5} alt='Daily Practice' />
+      <h3 className='tittle'>Daily Practice</h3>
+    </div>
+    <div className='service-item'>
+      <img src={slide6} alt='Homework Help' />
+      <h3 className='tittle'>Homework Help</h3>
+    </div>
+  </div>
+</div>
      
     </div>
 

@@ -1,7 +1,7 @@
 .home {
   margin: 0%;
   padding: 0%;
-  position: relative;
+  width: 100%;
 }
 
 
@@ -96,11 +96,6 @@
   z-index: 100;
 }
 
-#teach{
-  background-color: lightblue;
-  width: 600px;
-  height: 1115px;
-}
 
 .form .sumbit2{
   position: relative;
@@ -215,58 +210,51 @@ h1{
 }
 
 
-.service{
-  display: flex;
+.service img{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
-.service img{
-  flex:1;
-  width: 30%;
+.main3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
 }
 
-.main3{
-  font-family: 'Montserrat', sans-serif;
-  padding-bottom: 20px;
-}
-
-.ServiceTittle{
+.service {
   display: flex;
-  padding: 0;
-  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.tittle1{
-  position: relative;
-  left:100px;
-}
-
-.tittle2{
-  position: relative;
-  left:400px;
-}
-
-.tittle3{
-    position: relative;
-    left:750px
-}
-
-.tittle4{
-  position: relative;
-  left:130px;
-}
-
-.tittle5{
-  position: relative;
-  left:450px;
-}
-
-.tittle6{
-  position: relative;
-  left:840px;
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.33%;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
+
+  .pic{
+    width: 100%;
+  }
+
+  .home{
+    width: 100%;
+  }
+
+
+  .Container{
+    width: 100%;
+  }
+
   .Container h1{
     font-size: 50px;
     padding-top: 150px;
@@ -275,59 +263,6 @@ h1{
   .Container p{
     font-size: 20px;
     padding-top: 150px;
-  }
-
-  .service{
-    display: flex;
-    flex-direction: column;
-  }
-  .ServiceTitle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
- 
-  .service img{
-    width: 100%;
-    padding: 0;
-    padding-bottom: 50px;
-  }
-
-  .tittle1{
-    position: absolute;
-    top:52%;
-    left: 50px;
-  }
-
-  .tittle2{
-    position: absolute;
-    top:61.2%;
-    left: 120px;
-  }
-
-  .tittle3{
-    position: absolute;
-    top:70.5%;
-    left: 120px;
-  }
-
-  .tittle4{
-    position: absolute;
-    top:79.5%;
-    left: 110px;
-  }
-
-  .tittle5{
-    position: absolute;
-    top:88.7%;
-    left: 120px;
-  }
-
-  .tittle6{
-    position: absolute;
-    top:98%;
-    left: 120px;
   }
 
   .head{
@@ -368,6 +303,26 @@ h1{
     position: relative;
     left:200px;
     top:-60px;
+  }
+
+  .service{
+    display:unset ;
+  }
+
+  .service-item {
+    display: unset;
+    padding: 0;
+    margin: 0;
+    
+  }
+
+  .tittle{
+    padding-left: 30%;
+  }
+
+  .main3 {
+    display:unset;
+    
   }
 
 }
