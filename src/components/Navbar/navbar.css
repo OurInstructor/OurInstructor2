@@ -19,8 +19,6 @@
 
   .navbar-right{
     padding: 10px;
-    display: relative;
-    left:1000px;
   }
   
   .nav-item{
@@ -49,6 +47,11 @@
 
 @media (max-width: 768px) {
   .navbarh{
-    width: 100%
+    max-width: 100%
+  }
+
+
+  .navbar-right{
+    padding-right: 10px;
   }
 }

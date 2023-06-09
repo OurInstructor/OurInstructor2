@@ -34,7 +34,7 @@ const Navbar = () => {
              <Link to="/teacher" className="nav-item nav-btn">Teacher</Link>
            }
           {user === null ? (
-            <Link to="/login" className="nav-item nav-btn">
+            <Link to="/login" className="nav-item nav-btn log">
               Login
             </Link>
           ) : (

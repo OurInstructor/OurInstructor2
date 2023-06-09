@@ -254,27 +254,27 @@ const MyComponent = () => {
   <h2>Our Services</h2>
   <div className='service'>
     <div className='service-item'>
-      <img src={slide1} alt='Attention on each Student' />
-      <h3 className='tittle1'>Attention on each Student</h3>
+      <img src={slide1} alt='Attention on each Student' className='light' />
+      <h3 className='tittle'>Attention on each Student</h3>
     </div>
     <div className='service-item'>
-      <img src={slide2} alt='Qualified Tutors' />
+      <img src={slide2} alt='Qualified Tutors' className='light'/>
       <h3 className='tittle'>Qualified Tutors</h3>
     </div>
     <div className='service-item'>
-      <img src={slide3} alt='Quality Content' />
+      <img src={slide3} alt='Quality Content' className='light'/>
       <h3 className='tittle'>Quality Content</h3>
     </div>
     <div className='service-item'>
-      <img src={slide4} alt='Weekly/Monthly Test' />
+      <img src={slide4} alt='Weekly/Monthly Test' className='light'/>
       <h3 className='tittle'>Weekly/Monthly Test</h3>
     </div>
     <div className='service-item'>
-      <img src={slide5} alt='Daily Practice' />
+      <img src={slide5} alt='Daily Practice' className='light'/>
       <h3 className='tittle'>Daily Practice</h3>
     </div>
     <div className='service-item'>
-      <img src={slide6} alt='Homework Help' />
+      <img src={slide6} alt='Homework Help' className='light'/>
       <h3 className='tittle'>Homework Help</h3>
     </div>
   </div>
