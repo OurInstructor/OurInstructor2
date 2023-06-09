@@ -133,6 +133,7 @@
 @media (max-width: 768px) {
   
   .auth {
+    color: black;
     background-size: cover;
     background-position: center;
     height: 700px;
