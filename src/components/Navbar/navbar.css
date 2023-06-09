@@ -47,11 +47,6 @@
 
 @media (max-width: 768px) {
   .navbarh{
-    max-width: 100%
-  }
-
-
-  .navbar-right{
-    padding-right: 10px;
+    width: 100%
   }
 }

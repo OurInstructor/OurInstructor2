@@ -182,13 +182,13 @@
 
   .btn{
     position: relative;
-    left: -80%;
-    width: 280px;
+    left: -60%;
+    width: 200%;
   }
 
   .reg{
     position: relative;
-    left: -95px;
+    left: -80%;
   }
 
   .register {
@@ -196,6 +196,15 @@
     left: 15%;
     text-align: center; 
     font-size: 15px;
+  }
+
+  .register p{
+    position: relative;
+    left: -20px;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
   }
 }
 
