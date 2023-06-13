@@ -1,15 +1,11 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import './teacher.css'
+import TeacherSidebar from '../../components/Sidebar/TeacherSidebar';
 
 const Teacher = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen) 
-  }
+  
   
   const navigate = useNavigate();
   useEffect(()=>{
@@ -25,16 +21,7 @@ const Teacher = () => {
 
   return (
     <div>
-      <button className="sidebar" onClick={toggleSidebar}><ion-icon className="lines" name="menu-outline"></ion-icon></button>
-      {isOpen && (
-        <div className="Sidebuttons">
-          <ul>
-            <li><Link>Home</Link></li>
-            <li><Link>Student</Link></li>
-            <li><Link>Teacher</Link></li>
-          </ul>
-        </div>
-      )}
+      <TeacherSidebar/>
       <div className='TeacherBody'>
       <div>Teacher</div>
       <div>Teacher</div>

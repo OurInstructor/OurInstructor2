@@ -1,10 +1,15 @@
 import "./navbar.css"
 import { Link } from "react-router-dom"
 import logo from "../../Assets/logo.png"
-import React from 'react';
+import React, { useState } from 'react';
 
 
 const Navbar = () => {
+  const [isProfile , setProfile] = useState(false);
+
+  const ProfileButton = () => {
+    setProfile(!isProfile);
+  }
   const user = localStorage.getItem('refresh');
   const name = localStorage.getItem('profile');
   const role = localStorage.getItem('role');
@@ -22,42 +27,40 @@ const Navbar = () => {
           <Link to="/" className="nav-item nav-logo">
             <img src={logo} alt="logo" width={"40px"} height={"40px"} />
           </Link>
-          <Link to="/" className="nav-item nav-btn">
-            Ourinstructor
-          </Link>
+          { user === null ? (
+            <div>
+              <Link to="/" className="nav-item nav-btn">Ourinstructor</Link>
+            </div>
+          ):(
+            <div>
+              {role === 'student' && 
+                 <Link to="/student" className="nav-item nav-btn">Ourinstructor</Link>
+              }           
+              { role === 'teacher' && 
+                 <Link to="/teacher" className="nav-item nav-btn">Ourinstructor</Link>
+              }
+            </div>
+          )}
         </div>
         <div className="navbar-right">
-          {role === 'student' && 
-             <Link to="/student" className="nav-item nav-btn">Student</Link>
-          }           
-          { role === 'teacher' && 
-             <Link to="/teacher" className="nav-item nav-btn">Teacher</Link>
-           }
           {user === null ? (
             <Link to="/login" className="nav-item nav-btn log">
               Login
             </Link>
           ) : (
             <div className="right">
-              <Link to="/" onClick={logout} className="nav-item nav-btn">
-                Log-Out
-              </Link>
-              <p
-                style={{
-                  backgroundColor: 'black',
-                  width: '10px',
-                  padding: '10px',
-                  color: 'white',
-                  borderRadius: '100%',
-                }}
-              >
-                <Link
-                  to="/Profile"
-                  style={{ color: 'white', textDecoration: 'none' }}
-                >
-                  {name.charAt(0).toUpperCase()}
-                </Link>
-              </p>
+              <div>
+                <button onClick={ProfileButton} style={{backgroundColor: 'black' ,width:'auto',padding: '10px',color: 'white',borderRadius: '30%'}}>
+                    {name.toUpperCase()} 
+                </button>
+                { isProfile && (
+                  <div className="Name">
+                    <Link className="NameItem" to="/Profile">Profile</Link><br/>
+                    <Link className="NameItem" to="/" onClick={logout}>Log-Out</Link>
+                  </div>
+                )}
+              </div>
+
             </div>
           )}
         </div>

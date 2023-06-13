@@ -1,0 +1,29 @@
+.SideBarColumn{
+    position: absolute;
+    top:108px;
+    background-color: pink;
+    padding: 10px;
+}
+
+.beforeCollapse{
+    display: flex;
+    justify-content: center;   
+    width: 250px;
+    font-weight: bold;
+}
+
+.SideItems {
+    text-decoration: none;
+    color: rgb(69, 69, 69);
+    transition: 0.2s;
+    display: block;
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  
