@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 10;
 }
 .fot-item{
     padding: 10px;
@@ -24,7 +24,7 @@
     color: white;
     cursor: pointer;
     padding: 10px 20px;
-    z-index: 100;
+    z-index: 10;
 }
 
 .fot-btn:hover{

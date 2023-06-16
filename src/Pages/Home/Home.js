@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect } from 'react';
 import slide1 from '../../Assets/S1.jpg';
 import slide2 from '../../Assets/S2.jpg';
 import slide3 from '../../Assets/S3.jpg';
@@ -14,16 +14,17 @@ const MyComponent = () => {
   const [showForm, setShowForm] = useState(false);
   const [role, setRole] = useState('teacher');
 
+  
   const handleteacher = () => {
     setShowForm(!showForm);
-
+    
     if (role === 'student') {
       setRole('teacher');
     } else if (role === 'teacher') {
       setRole('student');
     }
   };
-
+  
   const subjects = [
     { id: 1, name: "Maths" },
     { id: 2, name: "EVS" },
@@ -45,7 +46,7 @@ const MyComponent = () => {
       setSelectedSubjects([...selectedSubjects, selectedSubject]);
     }
   };
-
+  
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [password2, setPassword2] = useState('');
@@ -60,16 +61,16 @@ const MyComponent = () => {
   const [parent, setParent] = useState('');
   
   
-
-
+  
+  
   const handlePrevSlide = () => {
     setCurrentSlideIndex((prevIndex) => (prevIndex === 0 ? slides.length - 1 : prevIndex - 1));
   };
-
+  
   const handleNextSlide = () => {
     setCurrentSlideIndex((prevIndex) => (prevIndex === slides.length - 1 ? 0 : prevIndex + 1));
   };
-
+  
 
   const handlestudent = (event) =>{
     event.preventDefault();
@@ -89,17 +90,27 @@ const MyComponent = () => {
   console.error(error);
 });
 
-  
-    
-    
+}
 
-    
+const isLocalStorageEmpty = () => {
+  return localStorage.length === 0;
+};
+localStorage.getItem('Reload' , "True");
+
+useEffect(() => {
+if (!isLocalStorageEmpty()) {
+  localStorage.removeItem('refresh');
+  localStorage.removeItem('profile');
+  localStorage.removeItem('role');
+  localStorage.getItem('Reload' , "False");
+  window.location.reload();
+}
+
+}, []);
 
 
-  }
-
-  return (
-    <div className="home">
+return (
+  <div className="home">
       <button className="prev-button design" onClick={handlePrevSlide}>&#10094;</button>
       <div className="Container" style={{ backgroundImage: `url(${currentSlide})`,opacity:'0.8'}}>
       <h1 className='data'>Ourinstructor</h1>
@@ -110,7 +121,7 @@ const MyComponent = () => {
       <button className="next-button design" onClick={handleNextSlide}>&#10095;</button>
       
       {!showForm ? (
-         <div className='main'>
+        <div className='main'>
 
          <h1 className='head'>Teacher Form</h1>
          <div className='main2' style={{ display: 'flex' }}>

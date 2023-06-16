@@ -5,6 +5,16 @@ import './student.css'
 import StudentSidebar from '../../components/Sidebar/StudentSidebar';
 
 const Student = () => {
+
+  fetch('https://ourinstructor.pythonanywhere.com/teacher/') // Replace with your API endpoint URL
+  .then(response => response.json())
+  .then(data => {
+    console.log(data); // Process the retrieved data as needed
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
   
   const navigate = useNavigate();
   useEffect(()=>{

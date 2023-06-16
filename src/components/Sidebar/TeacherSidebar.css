@@ -1,0 +1,11 @@
+.collapse{
+    position: relative;
+    left:135px;
+}
+
+.sidebar{
+    font-size: 1.1em;
+    background-color:pink;
+    border: none;
+    outline: none;
+}
