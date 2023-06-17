@@ -15,10 +15,6 @@ const Teacher = () => {
     }
   })
 
-  
-
-   
-
   return (
     <div>
       <TeacherSidebar/>

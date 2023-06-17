@@ -29,6 +29,7 @@ const Login = () => {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
+        localStorage.setItem('access' , data.access);
         localStorage.setItem('refresh', data.refresh)
         localStorage.setItem('profile' , data.profile.username)
         localStorage.setItem('role' , data.profile.role)

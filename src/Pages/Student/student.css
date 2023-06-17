@@ -1,3 +1,106 @@
 .StudentBody{
-    text-align: center;
+    height: 1100px;
+    width: 1400px;
 }
+
+.mid{
+    padding: 40px; 
+    width: 99%;
+    height: auto;
+    background-color:gray;
+    position: relative;
+    top:29px;
+    left: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+}
+
+.card{
+    height:200px;
+    width:280px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+ 
+  .cardbody{
+    max-width:1000px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .card{
+    min-height:200px;
+    width:260px;
+    margin:40px 10px;
+    padding:1rem;
+    cursor:pointer;
+    background-color:#fff;
+  }
+  .card img{
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    position: relative;
+    top:60px;
+    z-index: 1000;
+    transition: all .5s ease-in-out;
+    object-fit: cover;
+  }
+  .card__content{
+    margin:1rem 0;
+    color:#222;
+    overflow:hidden;
+    margin-top:-200px;
+    opacity:0;
+    visibility:hidden;
+    transition:all .5s ease-in-out;
+  }
+  .card__content h2{
+    margin:.6rem auto;
+    text-align:center;
+  }
+  .card__content p{
+    font-size:1.1rem;
+    line-height:1.8rem;
+    text-align:center;
+  }
+  .card__content a{
+    width:200px;
+    padding:10px 15px;
+    display:block;
+    text-align:center;
+    margin:.6rem auto;
+    font-size:1.1rem;
+    color:#444;
+    text-decoration:none;
+    background-color:#222;
+    border-radius:10px;
+    transition:.3s;
+    position: relative;
+    top:60px;
+  }
+  .card__content a:hover{
+    color:#fff;
+    background-color:#000;
+    box-shadow:0 0 2px 2px rgba(0,0,0,0.4);
+   
+  }
+  .card:hover img{
+    margin-top:-60px;
+    box-shadow:0 0 4px 6px rgba(0,0,0,0.3);
+  }
+  .card:hover>.card__content{
+    background-color: lightblue;
+    height: 170px;
+    margin-top:0;
+    opacity:1;
+    visibility:visible;
+  }
+  @media screen and (max-width:800px){
+    .cardbody{
+      flex-wrap:wrap;
+    }
+  }

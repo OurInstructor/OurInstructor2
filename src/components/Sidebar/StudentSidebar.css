@@ -1,8 +1,11 @@
 .SideBarColumn{
     position: absolute;
     top:58px;
+    left:0px;
     background-color: pink;
     padding: 10px;
+    z-index: 7;
+    height: 100%;
 }
 
 .beforeCollapse{

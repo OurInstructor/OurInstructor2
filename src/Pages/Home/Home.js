@@ -95,17 +95,17 @@ const MyComponent = () => {
 const isLocalStorageEmpty = () => {
   return localStorage.length === 0;
 };
-localStorage.getItem('Reload' , "True");
 
 useEffect(() => {
-if (!isLocalStorageEmpty()) {
-  localStorage.removeItem('refresh');
-  localStorage.removeItem('profile');
-  localStorage.removeItem('role');
-  localStorage.getItem('Reload' , "False");
-  window.location.reload();
-}
-
+  if (!isLocalStorageEmpty()) {
+    localStorage.removeItem('refresh');
+    localStorage.removeItem('profile');
+    localStorage.removeItem('access');
+    localStorage.removeItem('role');
+    localStorage.setItem('Reload', 'False');
+    window.location.reload();
+  }
+  localStorage.removeItem('Reload')
 }, []);
 
 

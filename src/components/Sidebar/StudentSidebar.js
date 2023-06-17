@@ -17,7 +17,7 @@ const StudentSidebar = () => {
         <div className='SideBarColumn beforeCollapse'>
             <ul style={{listStyleType:"none"}}>
                 <button className='sidebar collapse' onClick={toggleSidebar}><ion-icon className="lines" name="menu-outline"></ion-icon></button>
-                <li><Link className='SideItems'>Home</Link></li>
+                <li><Link to="/student" className='SideItems'>BOOK a CLASS</Link></li>
                 <li><Link className='SideItems'>Student</Link></li>
                 <li><Link className='SideItems'>Teacher</Link></li>
             </ul> 

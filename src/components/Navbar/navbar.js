@@ -14,6 +14,7 @@ const Navbar = () => {
   const name = localStorage.getItem('profile');
   const role = localStorage.getItem('role');
   const logout = () => {
+    localStorage.removeItem('access');
     localStorage.removeItem('refresh');
     localStorage.removeItem('profile');
     localStorage.removeItem('role');
