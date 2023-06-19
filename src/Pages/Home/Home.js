@@ -103,7 +103,7 @@ useEffect(() => {
     localStorage.removeItem('access');
     localStorage.removeItem('role');
     localStorage.setItem('Reload', 'False');
-    //window.location.reload();
+    window.location.reload();
   }
   localStorage.removeItem('Reload')
 }, []);
